@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Conoce los principales beneficios del café y cómo disfrutarlo de forma responsable.">
+	<title>El café y sus beneficios</title>
+	<style>
+		:root {
+			--espresso: #2f1b12;
+			--coffee: #6f4026;
+			--caramel: #c98243;
+			--cream: #fff8ed;
+			--paper: #fffdf9;
+			--ink: #34251f;
+			--muted: #735f54;
+			--line: #eadbca;
+			--mint: #dceee4;
+		}
+
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			background: var(--cream);
+			color: var(--ink);
+			font-family: Georgia, "Times New Roman", serif;
+			line-height: 1.6;
+		}
+
+		header {
+			background:
+				linear-gradient(120deg, rgba(47, 27, 18, 0.98), rgba(111, 64, 38, 0.92)),
+				radial-gradient(circle at 80% 20%, #d99554, transparent 35%);
+			color: #fffaf4;
+			min-height: 68vh;
+			padding: 28px 7vw 72px;
+			display: flex;
+			flex-direction: column;
+		}
+
+		nav {
+			align-items: center;
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: auto;
+		}
+
+		.brand {
+			color: #fff;
+			font-size: 1.3rem;
+			font-weight: bold;
+			letter-spacing: 0.08em;
+			text-transform: uppercase;
+		}
+
+		nav a {
+			border-bottom: 1px solid rgba(255, 250, 244, 0.6);
+			color: #fffaf4;
+			text-decoration: none;
+		}
+
+		.hero {
+			max-width: 760px;
+			padding-top: 14vh;
+		}
+
+		.eyebrow {
+			color: #f6c995;
+			font-size: 0.82rem;
+			font-weight: bold;
+			letter-spacing: 0.16em;
+			text-transform: uppercase;
+		}
+
+		h1 {
+			font-size: clamp(3.2rem, 8vw, 7.5rem);
+			line-height: 0.95;
+			margin: 18px 0 24px;
+			max-width: 760px;
+		}
+
+		.hero p {
+			color: #f8e9d8;
+			font-size: clamp(1.05rem, 2vw, 1.35rem);
+			max-width: 590px;
+		}
+
+		main {
+			margin: 0 auto;
+			max-width: 1180px;
+			padding: 84px 7vw;
+		}
+
+		.intro {
+			display: grid;
+			gap: 32px;
+			grid-template-columns: minmax(180px, 0.7fr) 1.3fr;
+			margin-bottom: 64px;
+		}
+
+		h2 {
+			color: var(--espresso);
+			font-size: clamp(2rem, 4vw, 3.5rem);
+			line-height: 1.05;
+		}
+
+		.intro p {
+			color: var(--muted);
+			font-size: 1.15rem;
+			max-width: 650px;
+		}
+
+		.benefits {
+			display: grid;
+			gap: 18px;
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		.benefit {
+			background: var(--paper);
+			border: 1px solid var(--line);
+			border-top: 5px solid var(--caramel);
+			padding: 30px 26px;
+		}
+
+		.number {
+			color: var(--caramel);
+			font-size: 0.9rem;
+			font-weight: bold;
+			letter-spacing: 0.12em;
+		}
+
+		.benefit h3 {
+			color: var(--espresso);
+			font-size: 1.45rem;
+			line-height: 1.15;
+			margin: 22px 0 12px;
+		}
+
+		.benefit p {
+			color: var(--muted);
+		}
+
+		.note {
+			background: var(--mint);
+			display: grid;
+			gap: 28px;
+			grid-template-columns: 0.8fr 1.2fr;
+			margin-top: 72px;
+			padding: 42px;
+		}
+
+		.note h2 {
+			font-size: clamp(1.8rem, 3vw, 2.8rem);
+		}
+
+		.note p {
+			color: #466055;
+			font-size: 1.05rem;
+		}
+
+		footer {
+			border-top: 1px solid var(--line);
+			color: var(--muted);
+			font-size: 0.9rem;
+			padding: 28px 7vw 40px;
+			text-align: center;
+		}
+
+		@media (max-width: 720px) {
+			header {
+				min-height: 76vh;
+				padding: 22px 7vw 58px;
+			}
+
+			nav a {
+				font-size: 0.92rem;
+			}
+
+			.hero {
+				padding-top: 12vh;
+			}
+
+			main {
+				padding-top: 58px;
+			}
+
+			.intro,
+			.note {
+				grid-template-columns: 1fr;
+			}
+
+			.benefits {
+				grid-template-columns: 1fr;
+			}
+
+			.note {
+				margin-top: 54px;
+				padding: 28px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav aria-label="Navegación principal">
+			<span class="brand">Café &amp; bienestar</span>
+			<a href="#beneficios">Ver beneficios</a>
+		</nav>
+
+		<div class="hero">
+			<span class="eyebrow">Una pausa con propósito</span>
+			<h1>El café también puede cuidar de ti.</h1>
+			<p>Además de su aroma y sabor, el café aporta compuestos que pueden favorecer la energía, la concentración y el bienestar cuando se consume con moderación.</p>
+		</div>
+	</header>
+
+	<main>
+		<section class="intro" id="beneficios">
+			<h2>Lo que hay en cada taza</h2>
+			<p>El café contiene cafeína y antioxidantes naturales. Sus efectos pueden variar según la persona, el tipo de preparación y la cantidad consumida, pero estos son algunos de sus beneficios más conocidos.</p>
+		</section>
+
+		<section class="benefits" aria-label="Beneficios del café">
+			<article class="benefit">
+				<span class="number">01 / ENERGÍA</span>
+				<h3>Ayuda a combatir el cansancio</h3>
+				<p>La cafeína estimula el sistema nervioso y puede aumentar la sensación de alerta, especialmente durante las primeras horas del día.</p>
+			</article>
+
+			<article class="benefit">
+				<span class="number">02 / ENFOQUE</span>
+				<h3>Favorece la concentración</h3>
+				<p>Una cantidad moderada puede mejorar temporalmente la atención y el rendimiento en tareas que requieren concentración.</p>
+			</article>
+
+			<article class="benefit">
+				<span class="number">03 / PROTECCIÓN</span>
+				<h3>Aporta antioxidantes</h3>
+				<p>El café contiene compuestos antioxidantes que ayudan a proteger las células frente al estrés oxidativo.</p>
+			</article>
+		</section>
+
+		<section class="note">
+			<h2>Disfrútalo a tu medida</h2>
+			<p>Para muchas personas, hasta 400 mg de cafeína al día puede ser una cantidad adecuada. Sin embargo, la sensibilidad varía. Evita tomarlo cerca de la hora de dormir y consulta con un profesional de la salud si estás embarazada, tienes alguna condición médica o notas efectos como nerviosismo, palpitaciones o insomnio.</p>
+		</section>
+	</main>
+
+	<footer>
+		Información general sobre nutrición y bienestar. El café no sustituye una alimentación equilibrada ni el consejo médico.
+	</footer>
+</body>
+</html>
